@@ -38,3 +38,4 @@ Thumbs.db
 # PyTorch model weights
 *.pth
 *.pt
+Baseline/runs/baseline/*
