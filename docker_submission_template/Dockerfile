@@ -1,4 +1,4 @@
-FROM pytorch/pytorch:2.2.2-cpu
+FROM pytorch/pytorch:2.2.2-cuda12.1-cudnn8-runtime
 
 WORKDIR /app
 
@@ -13,4 +13,3 @@ ENV PYTHONUNBUFFERED=1
 
 # Default: expect input mounted at /input and output at /output
 CMD ["python", "/app/run_infer.py", "--input", "/input", "--output", "/output", "--weights", "/app/weights/best_model.pth"]
-
